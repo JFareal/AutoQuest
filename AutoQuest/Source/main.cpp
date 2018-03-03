@@ -77,10 +77,12 @@ int GetMeleeAttackValue(CharacterAttribute strength)
 		return baseAttack + 1;
 	}
 
-	else (strength > 15)
+	else if (strength > 15)
 	{
 		return baseAttack + 2;
 	}
+
+	return baseAttack;
 }
 
 int GetHealthValue(CharacterAttribute stamina)
